@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub2.css">
+    
+    <link rel="stylesheet" href="css/sub2-max-767.css">
+    <link rel="stylesheet" href="css/sub2-min-768.css">
+    <link rel="stylesheet" href="css/sub2-min-1023.css">
+    
+    <link rel="stylesheet" href="css/common.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+
+    
+    <script>
+        $(function(){
+            $("#s1").css("transform", "translateY(0px)").css("opacity", "1");
+
+            $(window).scroll(function(){
+                var scroll=$(this).scrollTop();
+
+                var s2 = $('#s2').offset().top;
+                console.log(scroll)
+
+                if(scroll > s2-400){
+                    $('#s1').css("transform", "translateY(0px)").css("opacity", "1");
+                    $('#s2').css("transform", "translateY(0px)").css("opacity", "1");
+                    $('#s3').css("transform", "translateY(-100px)").css("opacity", "0");
+                }
+
+
+                var s3 = $('#s3').offset().top;
+
+                //s3-600 : 크면 클수록 스크롤을 내릴 때 효과가 나타남
+                if(scroll > s3-400){
+                    $('#s2').css("transform", "translateY(100px)").css("opacity", "0");
+                    $('#s3').css("transform", "translateY(0px)").css("opacity", "1");
+                    $('#s4').css("transform", "translateY(-100px)").css("opacity", "0")
+                }
+
+                var s3 = $('#s4').offset().top;
+
+                if(scroll > s3-400){
+                $('#s4').css("transform", "translateY(0px)").css("opacity", "1");
+                $('#s3').css("transform", "translateY(100px)").css("opacity", "0")
+                }
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <div id="wrap">
+
+        <header id="s1">
+            <nav>
+                <img src="sub1_img/logo.png" alt="logo">
+                <img src="sub1_img/logo3.png" alt="logo3">
+            </nav>
+
+            <div id = "w1">
+                <ul>
+    
+                    <a href="https://cinereplicas.kr/"><li class="li">해리 포터 굿즈</li></a>
+                    <a href="https://harrypottershop.co.uk/?utm_source=wwd_web&utm_medium=nav&utm_campaign=HPShop"><li class="li">해리 포터 쇼핑몰</li></a>
+                    
+                    <a href="index.html"><li class="li">메인 홈</li></a>
+                    <a href="#carouseltext"><li class="li">해리 포터 시리즈</li></a>
+                    <a href="sub.html"><li class="li">기숙사 정보</li></a>
+                </ul>
+            </div>
+        </header>
+
+
+        <div id="s2">
+            <div class="title">
+                <h2>신비한 동물사전 / 2016</h2>
+            </div>
+
+            <div class="box">
+                <div>
+                    <div class='embed-container m'>
+                        <iframe src='https://www.youtube.com/embed//VYZ3U1inHA4'></iframe>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <p>1926년 뉴욕, 마법사 뉴트 스캐맨더가 이 곳을 찾는다. 그의 목적은 세계 곳곳에 숨어있는 신비한 동물들을 찾기 위한 것. 여행을 하면서 다양한 크기의 신비한 동물을 구조해
+                        안에 마법의
+                        공간이 있는 가방에 넣어 다니며 보살핀다. <br> 하지만 은행을 지나던 중 금은보화를 좋아하는 신비한 동물인 니플러가 가방 안에서 탈출을 하고 이 일로 전직 오러였던
+                        티나와 노마지
+                        제이콥과 엮이게 된다. <br> 이 사고로 뉴트와 제이콥의 가방이 바뀌면서 신비한 동물들이 대거 탈출을 하고 그들은 동물들을 찾기 위해 뉴욕 곳곳을 누빈다. 한편, 인간
+                        사회와 마법
+                        사회를 발칵 뒤집는 사건이 발생하고, 이 모든 것이 뉴트의 소행이라는 오해를 받게 되는데…</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="s3">
+            <div class="title">
+                <h2>신비한 동물들과 그린델왈드의 범죄 / 2018</h2>
+            </div>
+
+            <div class="box">
+                <div>
+                    <div class='embed-container m'>
+                        <iframe src='https://www.youtube.com/embed//8bYBOVWLNIs' allowfullscreen></iframe>
+                    </div>
+                </div>
+        
+                <div class="text">
+                    <p>‘뉴트 스캐맨더’(에디 레드메인)의 활약으로 강력한 어둠의 마법사 ‘겔러트 그린델왈드’(조니 뎁)가 미합중국 마법부 MACUSA에 붙잡히지만, 이내 장담했던 대로 탈출해 추종자를 모으기
+                        시작한다. <br> 순혈 마법사의 세력을 모아 마법을 사용하지 않는 사람들을 지배하려는 그린델왈드의 야욕을 막기 위해 ‘알버스 덤블도어’(주드 로)는 제자였던 뉴트에게 도움을 요청한다.
+                        <br> 마법사 사회는 점점 더 분열되어 가는 가운데, 앞날의 위험을 알지 못한 채 뉴트는 이를 승낙하는데…</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="s4">
+            <div class="title">
+                <h2>신비한 동물들과 덤블도어의 비밀 / 2022</h2>
+            </div>
+
+            <div class="box">
+                <div>
+                    <div class='embed-container m'>
+                        <iframe src='https://www.youtube.com/embed//Y9dr2zw-TXQ'  allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <p>
+                        1930년대, 제2차 세계대전에 마법사들이 개입하게 되면서 강력한 어둠의 마법사 그린델왈드의 힘이 급속도로 커진다. <br> 덤블도어는 뉴트 스캐맨더에게 위대한 마법사 가문 후손,
+                        마법학교의 유능한 교사, 머글 등으로 이루어진 팀에게 임무를 맡긴다. <br> 이에 뉴트와 친구들은 머글과의 전쟁을 선포한 그린델왈드와 추종자들, 그의 위험한 신비한 동물들에 맞서 세상을
+                        구할 거대한 전쟁에 나선다. <br> 한편 전쟁의 위기가 최고조로 달한 상황 속에서 덤블도어는 더 이상 방관자로 머물 수 없는 순간을 맞이하고, 서서히 숨겨진 비밀이 드러나는데…
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="iconbox">
+            <a href="https://www.instagram.com/wizardingworld/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/wizardingworld"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fwizardingworld"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><i class="fa-brands fa-youtube"></i></a>
+            
+        </div>
+   
+        <div id="tt">
+            <p>E-mail : -@naver.com</p>
+            <p>소요 기간 : 2023. 07. 13 ~ 2023. 08</p>
+        </div>
+
+
+    </div>
+</body>
+</html>

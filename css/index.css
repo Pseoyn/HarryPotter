@@ -1,0 +1,300 @@
+@charset "utf-8";
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+a:link, a:visited, a:active {text-decoration: none;}
+
+
+
+body { background-color: black;}
+
+#wrap { width: 100%; height: 5540px;
+    background-image:url("../index_img/back/index2.jpg");
+    background-repeat: no-repeat; background-position:center top; overflow:hidden;
+    margin:0 auto;}
+
+    
+
+header { width: 1090px; height: 1350px; margin: 0 auto;  display: flex;
+    flex-direction: column; align-items: center; justify-content: center; }
+    
+    #video {width: 1500px; height: 1000px; position: absolute; }
+ 
+    #imgbox {width: 1500px;; height: 1000px; position:absolute; transition: all 0.5s; 
+    display: flex; justify-content: center; top:10px; background-color: black; opacity: 0.75; }
+    #imgbox:hover { opacity: 0; }
+
+    [alt="logo"] { position:absolute; top: 70px; transition: all 0.8s;}
+    [alt="h3"] { position: absolute; top: 320px; transition: all 0.8s;}
+    [alt="dormitory"] {position:absolute;  transition: all 0.8s;
+        animation-name: logo;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;}
+
+@keyframes logo {
+    0% { top: 410px;}
+    100% { top: 390px;}
+}
+  
+
+.stage {width: 100%; height: 700px; transform-style: preserve-3d; user-select: none; overflow:hidden; display: flex; flex-direction: column; }
+    .stage > h2 { color: white; text-align: center; font-family: '국립박물관문화재단클래식B'; letter-spacing:15px; }
+    .stage > a {font-family: 'Cafe24Oneprettynight'; letter-spacing:3px; margin: 5px auto 0;  color: white; line-height: 40px;
+     font-size: 18px; background-color: transparent; border: none; transition: all 0.6s; padding: 5px 10px; border-radius: 20px;}
+    .stage > a:hover {box-shadow: 0px 0px 10px 0px white; background-color: whitesmoke;}
+    .stage > a:link {color: white;}
+    .stage > a:link:hover {color: black;}
+    .stage > a:visited {color: white;}
+    .stage > a:visited:hover {color: black;}
+
+    
+
+.container {width: 100%; height:600px; margin: 0 auto; perspective: 2500px; transform:translate(0);}
+    .ring:hover { animation-play-state: paused;}
+    .ring:hover {animation-play-state: running;}
+    .ring {width: 100%; height: 600px; transform-style: preserve-3d; user-select: none; position: relative;
+    display: flex; flex-wrap: nowrap; justify-content: center; align-items: start; }
+    .ring > .img {width:180px; height: 380px; transform-style:preserve-3d; user-select: none;  position: absolute;}
+    .img > a > img {width:180px; height: 380px; }
+
+
+
+    #textbox1 > h2 { width: 100%; color: white; display:block; text-align: center ; font-family: '국립박물관문화재단클래식B'; margin: 40px 0 0 0; }
+    #textbox1 > h3 {width: 100%; color: white; display: block; text-align: center; font-family: 'Cafe24Oneprettynight'; font-weight: 100; margin: 10px 0 0 0;}
+    
+    .wave > img:hover {
+        cursor:pointer;
+    }
+#dormitory {width: 945px; height: 600px; margin: 0 auto; display: flex; justify-content: center; align-items: center;  padding: 0 0 50px 0;}
+    .wave:nth-of-type(1) {width: 140px; height: 325px;  transition: all 0.8s; overflow: hidden;
+    animation-name: wave1;
+    animation-duration: 1.2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+}
+    .wave:nth-of-type(1):hover {transform: scale(1.1); }
+
+    @keyframes wave1 {
+        0% { margin: 0px 20px 120px 10px; }
+        100% { margin: 30px 20px 100px 10px;}
+    }
+
+
+    .wave:nth-of-type(2) {width: 140px; height: 320px;
+    animation-name: wave2;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;}
+
+    .wave:nth-of-type(2) {width: 140px; height: 325px;  transition: all 0.8s; ;}
+    .wave:nth-of-type(2):hover {transform: scale(1.1); }
+
+    @keyframes wave2 {
+        0% { margin: 0px 20px 100px 10px; }
+        100% { margin: 0px 20px 120px 10px;}
+    }
+    
+    .wave:nth-of-type(3) {width: 140px; height: 325px; 
+        animation-name: wave3;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;}
+
+    @keyframes wave3 {
+        0% { margin: 0px 20px 140px 10px; }
+        100% { margin: 0px 20px 90px 10px;}
+    }
+
+    .wave:nth-of-type(4) {width: 140px; height: 325px;
+        animation-name: wave4;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;}
+
+        .wave:nth-of-type(4) {width: 140px; height: 325px;  transition: all 0.8s; ;}
+        .wave:nth-of-type(4):hover { transform: scale(1.1); }
+        @keyframes wave4 {
+            0% { margin: 0px 20px 100px 10px; }
+            100% { margin: 0px 20px 120px 10px;}
+        }
+        
+    .wave:nth-of-type(5) {width: 140px; height: 325px;
+        animation-name: wave5;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;}
+    
+        .wave:nth-of-type(5) {width: 140px; height: 325px;  transition: all 0.8s; ; overflow: hidden;}
+        .wave:nth-of-type(5):hover {transform: scale(1.1); }
+        @keyframes wave5 {
+            0% { margin: 0px 20px 120px 10px; }
+            100% { margin: 30px 20px 100px 10px;}
+        }
+
+
+
+#carouseltext {width: 100%;color: white; text-align:center; font-family: 'Cafe24Oneprettynight'; letter-spacing:4px; line-height: 250px; font-weight: 100; }
+.carousel {width: 1500px; height: 550px;margin: 0 auto;
+position:relative; z-index: 1;}
+.carousel-item {
+    --items: 9;
+    --width: clamp(150px, 30vw, 300px);
+    --height: clamp(200px, 40vw, 400px);
+    --x: calc(var(--active) * 800%);
+    --y: calc(var(--active) * 100%);
+    --rot: calc(var(--active) * 120deg);
+    --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
+    overflow: hidden;
+    position: absolute;
+    z-index: var(--zIndex);
+    width: var(--width);
+    height: var(--height);
+    margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
+    border-radius: 10px;
+    top:45%;
+    left: 48%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transform-origin: 0% 100%;
+    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
+    background: black;
+    pointer-events: all;
+    transform: translate(var(--x), var(--y)) rotate(var(--rot));
+    transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
+  }
+  .carousel-item .carousel-box {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+    opacity: var(--opacity);
+    font-family: "Orelo-sw-db", serif;
+  }
+  .carousel-item .carousel-box:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5));
+  }
+  .carousel-item .title {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-family: 'Cafe24Oneprettynight';
+    bottom: 20px;
+    left: 20px;
+    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+    font-size: clamp(30px, 3vw, 15px);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    background-color: black; 
+    
+  }
+  .carousel-item .num {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-family: '국립박물관문화재단클래식B';
+    top: 5px;
+    left: 20px;
+    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+    font-size: clamp(20px, 10vw, 65px);
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    pointer-events: none;
+  }
+  
+ 
+.textbox2{width: 100%; height: 400px; color: white; text-align: center; display: flex; padding: 200px 0 0 0;
+    text-align: center;
+    flex-direction: column; align-items: center;  position:relative; }
+
+    .textbox2 > div {width: 100%; height: 200px; background-color: black; position:absolute; opacity: 0.6;
+    box-shadow: 0px 0px 40px 10px rgb(0, 0, 0);}
+
+
+    .textbox2 > h2 {font-family: '국립박물관문화재단클래식B'; letter-spacing:1px; font-size: 30px; z-index: 10;
+    padding: 20px 0 0 0;}
+    .textbox2 > h3 {font-family: 'Cafe24Oneprettynight'; letter-spacing:2px;font-weight: 100;
+    font-size: 25px; z-index: 10;}
+    .textbox2 > a {background-color: transparent; border: none; font-size: 18px; font-family: 'Cafe24Oneprettynight';
+    margin: 20px 0;transition: all 0.6s; padding: 5px 10px; border-radius: 20px; z-index: 10; line-height: 40px;}
+
+    .textbox2 > a:hover {box-shadow: 0px 0px 10px 0px white; background-color: whitesmoke;}
+    .textbox2 > a:link {color: white;}
+    .textbox2 > a:link:hover {color: black;}
+    .textbox2 > a:visited {color: white;}
+    .textbox2 > a:visited:hover {color: black;}
+
+#animals {width: 1080px; height: 580px; margin: 50px auto;  position:relative; overflow: hidden;
+    display: flex;}
+    .slide{width: 4500px;}
+    .slide > li {width: 1080px; height: 580px; float: left;}
+    .slide > li > img {width: 100%; height: 100%;}
+    i {position: absolute; display: block; cursor: pointer; color:white;}
+
+
+#w1 { width: 1500px; height: 1000px; margin:auto; display: flex; } 
+    #w1 > ul { width: 500px; height: 1000px; padding: 250px 0 0 150px; left: 0; display : flex; flex-direction: column;
+    justify-content: flex-start; text-align: center; font-family: '국립박물관문화재단클래식B'; font-size: 21px; line-height: 50px;}
+    
+  
+    .test{ width: 450px ;}
+    .li { width: 450px; }
+    .tip {
+        width: 270px; height: 60px; background-color: black; border: 1px solid white; text-align: center;
+        color: white; position:absolute; transition: all 0.5s ease; line-height: 25px; padding: 3px 0 0 0 ;
+        border-radius: 20px;  opacity: 0; font-size: 19px;
+        font-family: 'Cafe24Oneprettynight';
+    }
+
+    .on{
+        opacity: 1;
+    }
+
+    #w1 > li,a { color: white; transition: all 0.5s;}
+
+    #w1 > li,a:hover {background-color: white; color: black; box-shadow: 0px 0px 20px 1px white;}
+
+    #w1 > img{width: 1000px; height: 800px; margin: 200px 0 0 0;}
+
+    
+#tt {width: 1500px; height: 150px; 
+    display: flex; flex-direction: column; margin: 0 auto; align-items: center; } 
+    #tt > p {color: white; padding: 0 0 20px 0 ;}
+    
+#iconbox { width: 980px; height: 150px; display: flex; justify-content:flex-start; align-items: flex-start; margin: 0 auto;}
+    #iconbox p {color: white;}
+    i {font-size: 40px; } 
+    #iconbox a{ margin: 0 60px 0 0;}

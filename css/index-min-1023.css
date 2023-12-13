@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+@media (min-width:1023px) {
+
+#wrap { width: 100%; height: 5540px;
+    background-repeat: no-repeat; background-position:center top;}
+
+    
+
+header { width: 1090px; height: 1350px;}
+    
+    #video {width: 1500px; height: 1000px;  }
+ 
+    #imgbox {width: 1500px;; height: 1000px;}
+    #imgbox:hover { opacity: 0; }
+    #imgbox > img { width: 800px; }
+
+    [alt="logo"] { position:absolute; top: 70px; transition: all 0.8s;}
+
+.stage {width: 100%; height: 700px; }
+    .stage > h2 { font-size: 30px; }
+    .stage > a { font-size: 20px;}
+    
+    
+
+.container {width: 100%; height:600px; margin: 0 auto; perspective: 2500px; transform:translate(0);}
+    .ring {width: 100%; height: 600px; }
+    .ring > .img {width:180px; height: 380px; transform-style:preserve-3d; user-select: none;  position: absolute;}
+    .img > a > img {width:180px; height: 380px; }
+
+
+
+    #textbox1 > h2 { width: 100%;  font-size: 30px;}
+    #textbox1 > h3 {width: 100%; margin: 15px 0 0 0; font-size: 20px;}
+    
+#dormitory {width: 945px; height: 600px; }
+
+    
+    .wave:nth-of-type(3) {width: 140px; height: 325px; display:block;}
+
+#carouseltext {width: 100%; line-height: 250px; font-weight: 100; font-size: 25px;}
+.carousel {width: 1500px; height: 600px;;}
+
+  
+ 
+.textbox2{width: 100%; height: 400px; }
+
+
+    .textbox2 > h2 {font-size: 30px;}
+    .textbox2 > h3 {font-size: 20px;}
+    .textbox2 > a {font-size: 19px;}
+
+
+#animals {width: 1080px; height: 580px; margin: 50px auto;  position:relative; overflow: hidden;
+    display: flex;}
+    .slide{width: 4500px;}
+    .slide > li {width: 1080px; height: 580px; float: left;}
+    .slide > li > img {width: 100%; height: 100%;}
+  
+
+
+#w1 { width: 1500px; height: 1000px; } 
+    #w1 > ul { width: 100%; height: 1000px; padding: 250px 0 0 150px;
+    justify-content: flex-start; text-align: center; font-family: '국립박물관문화재단클래식B'; font-size: 21px; line-height: 70px;}
+    
+  
+    .test{ width: 400px ;}
+    .li { width: 400px; }
+    .tip { width:300px; font-size: 20px;}
+
+
+    #w1 > li,a { color: white; transition: all 0.5s;}
+
+    #w1 > li,a:hover {background-color: white; color: black; box-shadow: 0px 0px 20px 1px white;}
+
+    #w1 > img{width: 1000px; height: 800px; margin: 200px 0 0 0; display: block;}
+
+    
+#tt {width: 1500px; height: 150px; 
+    display: flex; flex-direction: column; margin: 0 auto; align-items: center; } 
+    #tt > p {color: white; padding: 0 0 20px 0 ;}
+    
+#iconbox { width: 980px; height: 150px; display: flex; justify-content:flex-start; align-items: flex-start; margin: 0 auto;}
+    #iconbox p {color: white;}
+    i {font-size: 40px; } 
+    #iconbox a{ margin: 0 60px 0 0;}
+.wave > a {
+    background-color: transparent;
+    box-shadow: none;
+}
+}

@@ -1,0 +1,116 @@
+@charset "utf-8";
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body { background-color: black;}
+#wrap {
+    width: 1015px;  background-image: url("../sub1_img/wrap.jpg") ;
+    margin: 0 auto; position:relative;
+    background-repeat: no-repeat;
+}
+
+
+    header {
+        width: 1015px; height: 525px;
+        display: flex;
+        flex-flow: row wrap; justify-content: center; align-content: space-between;
+        align-items: center;
+        transition: all 0.5s;
+    }
+
+        header > img {
+            box-shadow: 4px 0px 40px 8px black;
+        }
+
+    nav {
+        width: 900px; height:225px; 
+        display: flex; 
+        flex-direction: column; align-items: center;
+        transform: translateY(-100px); transition: all 2s; opacity: 0;
+    }
+        [alt="logo"] {
+            width: 900px; height: 80px;  transition: all 0.5s;
+        }
+        [alt="logo3"] {
+            width: 520px; height: 145px;  transition: all 0.5s;
+        }
+        
+    .H_d {
+        width: 220px; height: 270px;
+        transform: translateY(-100px); transition: all 1s; transition-delay: 0.3s; 
+
+        
+    }
+
+        table {
+            border: 2px solid rgb(110, 97, 97);
+            margin: 50px 0;
+            box-shadow: 0px 0px 50px 4px black;
+            background: rgba(0, 0, 0, 0.5);
+            
+        }
+               th{
+                width: 140px; height: 45px;
+                font-family: '국립박물관문화재단클래식B'; font-size: 20px;
+                }
+                td{
+                    width: 630px; 
+                    font-family: 'Cafe24Oneprettynight'; text-align: center; font-size: 17px;
+                }
+
+        .title_o {
+            width: 900px; height: 50px; 
+            font-family: '국립박물관문화재단클래식B'; font-size: 21px; text-align: center;
+            transition: all 0.5s;
+        }
+        
+        .content_o {
+            width: 900px;  
+            font-family: 'Cafe24Oneprettynight'; line-height: 30px;  font-size: 17px;
+            margin: 0 0 40px 0px;
+            transition: all 0.5s;
+        }
+
+        .title_t {
+            width: 900px; height: 50px;
+            font-family: '국립박물관문화재단클래식B'; font-size: 21px; text-align: center;
+            transition: all 0.5s;
+        }
+        .content_t {
+            width: 900px;  
+            font-family: 'Cafe24Oneprettynight'; line-height: 30px; font-size: 17px;  text-align: justify;
+            transition: all 0.5s;
+        }
+
+
+
+    .change {
+        width: 1015px; height: 1500px;  
+        margin: 0 auto;
+        display: flex; 
+        align-items: center; flex-direction: column;
+        color: rgb(192, 192, 192);
+        
+    }
+
+    #w1 > ul {
+        margin: 0px auto; 
+        
+    }
+
+.on {
+    opacity : 1;
+}
+
+    
